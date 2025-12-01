@@ -3,6 +3,11 @@ for config_file in $HOME/.zsh/*.zsh; do
   [ -r "$config_file" ] && source "$config_file"
 done
 
+# Load local zsh configuration excluded from .dotfiles repo
+for config_file in $HOME/.zsh-local/*.zsh; do
+  [ -r "$config_file" ] && source "$config_file"
+done
+
 # History configuration
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
