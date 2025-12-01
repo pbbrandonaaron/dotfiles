@@ -16,6 +16,3 @@ autoload -Uz compinit && compinit
 
 # Load history substring search plugin (installed via Homebrew)
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
-
-# Set personal aliases
-alias zshconfig="chezmoi edit ~/.zshrc"
