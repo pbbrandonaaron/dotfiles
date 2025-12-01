@@ -1,0 +1,21 @@
+# Load custom zsh configuration
+for config_file in $HOME/.zsh/*.zsh; do
+  [ -r "$config_file" ] && source "$config_file"
+done
+
+# History configuration
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
+setopt SHARE_HISTORY
+
+# Enable git completion
+autoload -Uz compinit && compinit
+
+# Load history substring search plugin (installed via Homebrew)
+source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+# Set personal aliases
+alias zshconfig="chezmoi edit ~/.zshrc"
