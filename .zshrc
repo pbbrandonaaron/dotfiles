@@ -4,7 +4,7 @@ for config_file in $HOME/.zsh/*.zsh; do
 done
 
 # Load local zsh configuration excluded from .dotfiles repo
-for config_file in $HOME/.zsh-local/*.zsh; do
+for config_file in $HOME/.zsh-local/*.zsh(N); do
   [ -r "$config_file" ] && source "$config_file"
 done
 
