@@ -19,5 +19,7 @@ setopt SHARE_HISTORY
 # Enable git completion
 autoload -Uz compinit && compinit
 
+zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
+
 # Load history substring search plugin (installed via Homebrew)
 source $(brew --prefix)/share/zsh-history-substring-search/zsh-history-substring-search.zsh
