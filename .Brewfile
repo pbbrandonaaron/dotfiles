@@ -3,6 +3,8 @@ tap "mongodb/brew"
 tap "peterldowns/tap"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
+# Dependency manager for Cocoa projects
+brew "cocoapods"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Fast and simple Node.js version manager
@@ -49,5 +51,7 @@ vscode "dbaeumer.vscode-eslint"
 vscode "digitalbrainstem.javascript-ejs-support"
 vscode "eamodio.gitlens"
 vscode "editorconfig.editorconfig"
+vscode "github.copilot"
+vscode "github.copilot-chat"
 vscode "github.vscode-github-actions"
 vscode "github.vscode-pull-request-github"
